@@ -1,0 +1,6 @@
+@VitaminApi_HostAddress = http://localhost:5043
+
+GET {{VitaminApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
