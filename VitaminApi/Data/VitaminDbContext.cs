@@ -1,11 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Reflection.Emit;
 using VitaminApi.Models;
 
 namespace VitaminApi.Data;
 
-public class VitaminDbContext : DbContext
+public class VitaminDbContext(DbContextOptions<VitaminDbContext> options) : DbContext(options)
 {
     public DbSet<User> Users { get; set; } = null!;
     public DbSet<SurveyResult> SurveyResults { get; set; } = null!;

@@ -1,14 +1,13 @@
-version: '3.8'
-
 services:
   webapi:
     build: .
     ports:
-      - "8080:80"
+      - "8080:8080"
     depends_on:
       - db
     environment:
       - ConnectionStrings__DefaultConnection=Server=db;Port=5432;Database=VitaminDb;User Id=postgres;Password=postgres;
+      - ASPNETCORE_ENVIRONMENT=Development
 
   db:
     image: postgres:latest

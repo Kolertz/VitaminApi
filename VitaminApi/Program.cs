@@ -1,8 +1,7 @@
-
 using Microsoft.EntityFrameworkCore;
+using VitaminApi.Data;
 using VitaminApi.Interfaces;
 using VitaminApi.Services;
-using VitaminApi.Data;
 using VitaminApi.Utils;
 
 namespace VitaminApi;

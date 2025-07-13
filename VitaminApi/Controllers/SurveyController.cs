@@ -11,7 +11,7 @@ public class SurveysController(ISurveyService surveyService) : ControllerBase
     private readonly ISurveyService _surveyService = surveyService;
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<SurveyDto>> GetSurvey(int id)
+    public async Task<ActionResult<SurveyDto>> GetSurveyResult(int id)
     {
         try
         {
