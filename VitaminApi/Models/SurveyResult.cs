@@ -7,7 +7,7 @@ public class SurveyResult
     public User? User { get; set; }
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
-    public ICollection<VitaminSurveyResult> VitaminSurveyResults { get; set; } = [];
+    public ICollection<VitaminNormSurveyResult> VitaminSurveyResults { get; set; } = [];
     public ICollection<MedicationSurveyResult> MedicationSurveyResults { get; set; } = [];
     public ICollection<VitaminConsumptionSurveyResult> VitaminConsumptionSurveyResults { get; set; } = [];
 }

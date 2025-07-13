@@ -36,8 +36,8 @@ public class SurveyService(VitaminDbContext context) : ISurveyService
                 VitaminId = vsr.VitaminId,
                 VitaminName = vsr.Vitamin!.Name,
                 Unit = vsr.Vitamin.Unit,
-                NormLevel = vsr.MinLevel,
-                CurrentLevel = vsr.CurrentLevel
+                MinLevel = vsr.MinLevel,
+                MaxLevel = vsr.MaxLevel
             }).ToList(),
             ConsumptionResults = survey.VitaminConsumptionSurveyResults.Select(vcsr => new ConsumptionResultDto
             {

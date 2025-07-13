@@ -7,7 +7,7 @@ public class VitaminDbContext(DbContextOptions<VitaminDbContext> options) : DbCo
 {
     public DbSet<User> Users { get; set; } = null!;
     public DbSet<SurveyResult> SurveyResults { get; set; } = null!;
-    public DbSet<VitaminSurveyResult> VitaminSurveyResults { get; set; } = null!;
+    public DbSet<VitaminNormSurveyResult> VitaminSurveyResults { get; set; } = null!;
     public DbSet<MedicationSurveyResult> MedicationSurveyResults { get; set; } = null!;
     public DbSet<VitaminConsumptionSurveyResult> VitaminConsumptionSurveyResults { get; set; } = null!;
     public DbSet<Vitamin> Vitamins { get; set; } = null!;
